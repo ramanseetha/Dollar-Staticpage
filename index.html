@@ -1,0 +1,1920 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dollar Business</title>
+  <link rel="icon" type="image/png" href="./images/TDB-FavIcon.jpg" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* keep Wistia aspect and negative margin behaviour */
+    .video-wrap {
+      margin-bottom: -120px;
+    }
+
+    @media(min-width:640px) {
+      .video-wrap {
+        margin-bottom: -150px;
+      }
+    }
+
+    /* clip-path fallback for older browsers */
+    .cta-shine {
+      clip-path: polygon(0% 0%, 55% 0%, 100% 100%, 25% 100%);
+    }
+
+    @keyframes marquee {
+      0% {
+        transform: translateX(0);
+      }
+
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+
+    .animate-marquee {
+      animation: marquee 18s linear infinite;
+    }
+
+
+    /* small helper classes for progress boxes */
+    .pb-box {
+      width: 8px;
+      /* matches sm:w-3 feel; adjust if needed */
+      height: 18px;
+      /* matches sm:h-5 feel; adjust */
+      border-radius: 4px;
+      background-color: #d1d5db;
+      /* gray-300 */
+      transition: background-color 0.25s ease;
+      display: inline-block;
+    }
+
+    @media (min-width: 640px) {
+      .pb-box {
+        width: 12px;
+        height: 20px;
+      }
+
+      /* sm sizes */
+    }
+
+    /* active state (blue) */
+    .pb-box.active {
+      background-color: #1E79FF;
+    }
+  </style>
+</head>
+
+<body>
+
+  <section class="relative bg-[#DCAF26] flex flex-col items-center justify-start overflow-visible pb-0">
+
+    <!-- Top Blue Bar -->
+    <div class="w-full bg-blue-600 text-white text-sm sm:text-base text-center py-1 sm:py-3 relative z-10">
+      Trusted by 51,000+ exporters, importers & Fortune 500 companies | Demo slots filling fast for October
+    </div>
+
+    <!-- Logo + Attention Bar -->
+    <div class="w-full relative px-4 sm:px-40 pt-8 z-10">
+
+      <!-- Left Logo (absolute on left) -->
+      <div class="absolute left-4 sm:left-40 top-14 -translate-y-1/2">
+        <!-- Replace path with your asset -->
+        <img src="./images//logo-dollar.svg" alt="Logo" class="h-24 sm:h-28 hidden sm:block" />
+      </div>
+
+      <!-- Center Attention Bar -->
+      <div class="flex justify-center w-full">
+        <div
+          class="bg-black/70 text-white px-6 py-2 sm:px-3 sm:py-3 rounded-full text-xs sm:text-sm flex items-center gap-2 text-center max-w-2xl mx-auto">
+          <span class="relative flex h-4 w-4 sm:h-5 sm:w-5">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-500 opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-4 w-4 sm:h-5 sm:w-5 bg-red-600"></span>
+          </span>
+          ATTENTION: THERE'S A REASON 51,000+ EXPORTERS ALWAYS SEEM ONE STEP AHEAD.
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Headline -->
+    <h1
+      class="mt-10 lg:mt-16 text-center text-white font-extrabold text-[30px] sm:text-[90px] max-w-7xl leading-[38px] md:leading-[78px] drop-shadow-lg relative z-10 px-4">
+      WHERE SMART EXPORTERS TURN DATA INTO DEALS
+      <br class="hidden sm:block" />
+      AND INFORMATION INTO MARKET DOMINANCE.
+    </h1>
+
+    <!-- Subtext -->
+    <p class="mt-8 text-center text-black/90 text-base sm:text-xl md:text-2xl max-w-4xl relative z-10 px-4 mb-12">
+      Powered by The Dollar Business, exporters gain unmatched visibility with live buyer, shipment & pricing data
+      to predict demand, quote smarter, and win global deals before anyone else.
+    </p>
+
+    <!-- Wistia Video wrapper -->
+    <div id="videoWrap"
+      class="relative w-[90%] sm:w-[70%] md:w-[55%] lg:w-[50%] xl:w-[45%] aspect-video z-40 video-wrap transition-all duration-300 opacity-100">
+      <script src="https://fast.wistia.com/player.js" async></script>
+      <script src="https://fast.wistia.com/embed/gy5qh1qibk.js" async type="module"></script>
+      <style>
+        wistia-player[media-id='gy5qh1qibk']:not(:defined) {
+          background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/gy5qh1qibk/swatch');
+          display: block;
+          filter: blur(5px);
+          padding-top: 56.25%;
+        }
+      </style>
+      <wistia-player media-id="gy5qh1qibk" aspect="1.7777777777777777"></wistia-player>
+    </div>
+
+
+  </section>
+
+  <!-- 🚀 BOOK DEMO SECTION -->
+  <section class="w-full py-10  lg:py-16 flex flex-col items-center text-center mt-[90px] sm:mt-[160px] px-4 sm:px-0">
+
+    <!-- CTA Button -->
+    
+
+    <button  onclick="openPopup()" class="relative group bg-[#1E79FF] text-white font-semibold rounded-lg 
+           px-2 sm:px-10 py-4 sm:py-5 text-sm sm:text-2xl 
+           hover:scale-[1.03] hover:-translate-y-0.5 transition-transform duration-300 
+           shadow-[0_4px_25px_rgba(30,121,255,0.4),0_0_25px_rgba(30,121,255,0.25)]
+           hover:shadow-[0_8px_30px_rgba(30,121,255,0.55),0_0_40px_rgba(30,121,255,0.4)]
+           overflow-hidden">
+      <span class="relative z-10">RESERVE MY FREE PERSONALIZED DEMO</span>
+
+      <!-- Shine -->
+      <span aria-hidden="true"
+        class="pointer-events-none absolute top-0 -left-[50%] w-[50%] h-full
+        bg-white/40 transition-all duration-[900ms]
+        [clip-path:polygon(0%_0%,55%_0%,100%_100%,25%_100%)]
+        group-hover:left-[120%] group-hover:opacity-0">
+      </span>
+
+      <!-- Gloss -->
+      <span aria-hidden="true"
+        class="pointer-events-none absolute inset-0 bg-white/10
+        opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+      </span>
+    </button>
+
+    <!-- Subtitle -->
+    <p class="mt-4 text-gray-600 text-sm sm:text-base max-w-2xl leading-relaxed">
+      Claim your spot and experience seamless proactive customer engagement.
+    </p>
+
+    <!-- Progress Bar (24 small boxes) -->
+    <div class="progressBar flex gap-[2px] sm:gap-[4px] justify-center mt-8 sm:mt-10 flex-wrap"></div>
+    <!-- boxes will be generated by JS -->
+    </div>
+
+    <!-- Features -->
+    <div
+      class="mt-6 sm:mt-8 flex flex-wrap justify-center gap-x-4 sm:gap-x-8 gap-y-3 sm:gap-y-4 text-gray-700 text-sm sm:text-base font-medium">
+      <div class="flex items-center gap-2">
+        <img src="./images/tick.svg" alt="tick" class="w-4" />
+        <span>Human-verified contacts</span>
+      </div>
+
+      <div class="flex items-center gap-2">
+        <img src="./images//tick.svg" alt="tick" class="w-4" />
+        <span>Predictive shipment analysis</span>
+      </div>
+
+      <div class="flex items-center gap-2">
+        <img src="./images//tick.svg" alt="tick" class="w-4" />
+        <span>27M+ profiles</span>
+      </div>
+
+      <div class="flex items-center gap-2">
+        <img src="./images//tick.svg" alt="tick" class="w-4" />
+        <span>7-day Trial and Multiple Demos</span>
+      </div>
+    </div>
+
+  </section>
+
+
+  <section class=" text-center px-4 sm:px-6 pt-0 pb-10 sm:py-10 relative z-10">
+    <!-- Heading -->
+    <h2 class="text-[23px] sm:text-6xl font-extrabold text-gray-900 mb-4 sm:mb-6 leading-tight">
+      Why <span class="text-gray-900">51,000+</span> Businesses
+      <span class="bg-gradient-to-r from-yellow-500 to-yellow-700 bg-clip-text text-transparent">Trust</span> EX–IM
+    </h2>
+
+    <!-- Subheading -->
+    <p class="text-gray-900 max-w-3xl mx-auto text-sm sm:text-lg mb-6 sm:mb-8 leading-relaxed px-2">
+      For <span class="font-semibold">12+ years</span>, The Dollar Business has been the original trade intelligence
+      platform trusted by clients spread across <span class="font-semibold">51+ countries</span> with verified data
+      coverage of <span class="font-semibold">181+ countries</span>.
+    </p>
+
+    <!-- Description -->
+    <p class="text-gray-900 max-w-3xl mx-auto text-sm sm:text-lg leading-relaxed px-2">
+      With <span class="font-medium">27M+ verified entities</span> and billions of shipments, EX–IM holds trillions of
+      data points from 7-8 years of trade history. It transforms scattered shipment records into actionable buyer-seller
+      insights with a clean, intuitive interface your team will actually use.
+    </p>
+
+    <!-- Image -->
+    <img src="./images//banner-1.svg" alt="Dashboard Banner"
+      class="mx-auto w-full max-w-7xl pt-6 sm:pt-8 object-contain" />
+
+    <!-- CTA Button -->
+    <div class="text-center mt-0 sm:mt-0 max-w-3xl mx-auto p-2 lg:p-8">
+      
+      <button  onclick="openPopup()" class="relative group bg-[#1E79FF] text-white font-semibold rounded-lg 
+           px-6  sm:px-10 py-4 sm:py-5 text-sm sm:text-2xl 
+           hover:scale-[1.03] hover:-translate-y-0.5 transition-transform duration-300 
+           shadow-[0_4px_25px_rgba(30,121,255,0.4),0_0_25px_rgba(30,121,255,0.25)]
+           hover:shadow-[0_8px_30px_rgba(30,121,255,0.55),0_0_40px_rgba(30,121,255,0.4)]
+           overflow-hidden">
+      <span class="relative z-10">CLAIM YOUR FREE DEMO SPOT NOW</span>
+
+      <!-- Shine -->
+      <span aria-hidden="true"
+        class="pointer-events-none absolute top-0 -left-[50%] w-[50%] h-full
+        bg-white/40 transition-all duration-[900ms]
+        [clip-path:polygon(0%_0%,55%_0%,100%_100%,25%_100%)]
+        group-hover:left-[120%] group-hover:opacity-0">
+      </span>
+
+      <!-- Gloss -->
+      <span aria-hidden="true"
+        class="pointer-events-none absolute inset-0 bg-white/10
+        opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+      </span>
+    </button>
+
+      <!-- Subtitle -->
+      <p class="mt-4 text-gray-600 text-sm sm:text-base max-w-2xl leading-relaxed">
+        Claim your spot and experience seamless proactive customer engagement.
+      </p>
+
+      <!-- Progress Bar (24 small boxes) -->
+      <div class="progressBar flex gap-[2px] sm:gap-[4px] justify-center mt-8 sm:mt-10 flex-wrap"></div>
+
+
+    </div>
+  </section>
+  <section class=" pb-12 overflow-hidden">
+
+    <!-- Title -->
+    <h2 class="text-center text-4xl font-semibold text-gray-900 mb-12">
+      Featured in
+    </h2>
+
+    <!-- Marquee Container -->
+    <div class="relative w-full overflow-hidden">
+
+      <!-- Track -->
+      <div class="flex w-max space-x-14 animate-marquee">
+
+        <!-- Logos (repeat twice for infinite loop) -->
+        <img src="./images/times.svg" class="h-7 w-auto opacity-70 hover:opacity-100 transition-opacity duration-300" />
+        <img src="./images/hindu.svg" class="h-7 w-auto opacity-70 hover:opacity-100 transition-opacity duration-300" />
+        <img src="./images/ielts.svg" class="h-7 w-auto opacity-70 hover:opacity-100 transition-opacity duration-300" />
+        <img src="./images/express.svg"
+          class="h-7 w-auto opacity-70 hover:opacity-100 transition-opacity duration-300" />
+        <img src="./images/edtech.svg"
+          class="h-7 w-auto opacity-70 hover:opacity-100 transition-opacity duration-300" />
+
+        <!-- Duplicate logos for seamless scroll -->
+        <img src="./images/times.svg" class="h-7 w-auto opacity-70 hover:opacity-100 transition-opacity duration-300" />
+        <img src="./images/hindu.svg" class="h-7 w-auto opacity-70 hover:opacity-100 transition-opacity duration-300" />
+        <img src="./images/ielts.svg" class="h-7 w-auto opacity-70 hover:opacity-100 transition-opacity duration-300" />
+        <img src="./images/express.svg"
+          class="h-7 w-auto opacity-70 hover:opacity-100 transition-opacity duration-300" />
+        <img src="./images/edtech.svg"
+          class="h-7 w-auto opacity-70 hover:opacity-100 transition-opacity duration-300" />
+
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Platform Section (paste inside your existing page where needed) -->
+  <section id="platformSection" class="py-12 sm:py-20 text-center px-4 sm:px-6 bg-[#f8f8f8df]">
+    <!-- Title -->
+    <h2 class="text-3xl sm:text-5xl md:text-6xl font-extrabold text-gray-900 leading-tight mb-4 sm:mb-6">
+      Finding Buyers and Sellers Across the
+      <br class="hidden sm:block" />
+      Globe Is Now Effortless
+    </h2>
+
+    <!-- Subtitle -->
+    <p class="text-base sm:text-2xl font-semibold text-gray-900 mb-8 sm:mb-12">
+      One intelligent platform to:
+    </p>
+
+    <!-- Video (responsive) -->
+    <div class="max-w-4xl mx-auto mb-12 sm:mb-16 rounded-xl overflow-hidden shadow-lg">
+      <div class="relative pb-[56.25%] h-0 overflow-hidden rounded-xl">
+        <iframe src="https://fast.wistia.net/embed/iframe/0d0rdjnyg9" title="Wistia Video" allow="autoplay; fullscreen"
+          allowfullscreen class="absolute top-0 left-0 w-full h-full"></iframe>
+      </div>
+    </div>
+
+    <!-- Steps -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10 max-w-7xl mx-auto mb-8">
+      <div class="text-left  p-5 rounded-xl ">
+        <p class="text-3xl sm:text-6xl font-bold text-gray-800 mb-2">01</p>
+        <p class="text-xl sm:text-3xl font-semibold text-gray-900 mb-2">Search</p>
+        <p class="text-gray-600 text-sm sm:text-lg leading-relaxed">
+          Enter HS Code, CAS number, or product name to discover worldwide trade opportunities.
+        </p>
+      </div>
+
+      <div class="text-left  p-5 rounded-xl ">
+        <p class="text-3xl sm:text-6xl font-bold text-gray-800 mb-2">02</p>
+        <p class="text-xl sm:text-3xl font-semibold text-gray-900 mb-2">Select</p>
+        <p class="text-gray-600 text-sm sm:text-lg leading-relaxed">
+          Identify the right markets and top players using real-time shipment data and insights.
+        </p>
+      </div>
+
+      <div class="text-left  p-5 rounded-xl ">
+        <p class="text-3xl sm:text-6xl font-bold text-gray-800 mb-2">03</p>
+        <p class="text-xl sm:text-3xl font-semibold text-gray-900 mb-2">Analyze</p>
+        <p class="text-gray-600 text-sm sm:text-lg leading-relaxed">
+          Compare pricing, volumes, and country trends with detailed analytics and Nexus maps.
+        </p>
+      </div>
+
+      <div class="text-left  p-5 rounded-xl ">
+        <p class="text-3xl sm:text-6xl font-bold text-gray-800 mb-2">04</p>
+        <p class="text-xl sm:text-3xl font-semibold text-gray-900 mb-2">Connect</p>
+        <p class="text-gray-600 text-sm sm:text-lg leading-relaxed">
+          Access verified buyer/seller profiles, financials, and key decision-makers instantly.
+        </p>
+      </div>
+    </div>
+
+    <!-- CTA + progress line -->
+    <div class="text-center mt-10 sm:mt-[50px] max-w-3xl mx-auto">
+
+      <button onclick="openPopup()" class="relative group bg-[#1E79FF] text-white font-semibold rounded-lg 
+           px-6 sm:px-10 py-4 sm:py-5 text-base sm:text-2xl 
+           hover:scale-[1.03] hover:-translate-y-0.5 transition-transform duration-300 
+           shadow-[0_4px_25px_rgba(30,121,255,0.4),0_0_25px_rgba(30,121,255,0.25)]
+           hover:shadow-[0_8px_30px_rgba(30,121,255,0.55),0_0_40px_rgba(30,121,255,0.4)]
+           overflow-hidden">
+        <span class="relative z-10 uppercase">Unlock Verified Buyers Today - Start Closing Deals</span>
+
+        <!-- Shine -->
+        <span aria-hidden="true" class="pointer-events-none absolute top-0 -left-[50%] w-[50%] h-full
+        bg-white/40 transition-all duration-[900ms]
+        [clip-path:polygon(0%_0%,55%_0%,100%_100%,25%_100%)]
+        group-hover:left-[120%] group-hover:opacity-0">
+        </span>
+
+        <!-- Gloss -->
+        <span aria-hidden="true" class="pointer-events-none absolute inset-0 bg-white/10
+        opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+        </span>
+      </button>
+
+      <p class="mt-4 text-gray-500 text-sm sm:text-base max-w-2xl mx-auto">
+        Fortune 500 companies rely on our data; Don’t get left behind.
+      </p>
+
+      <!-- PROGRESS (24 boxes) - JS will generate boxes here -->
+      <div class="progressBar flex gap-[2px] sm:gap-[4px] justify-center mt-8 sm:mt-10 flex-wrap"></div>
+    </div>
+  </section>
+
+  <section class="bg-black py-16 sm:py-20 px-4 sm:px-6 text-white">
+
+    <!-- Heading -->
+    <h2 class="text-center text-3xl sm:text-5xl md:text-6xl font-extrabold mb-8 sm:mb-28">
+      Turn Data into Strategy. Instantly
+    </h2>
+
+    <!-- Data Blocks Wrapper -->
+    <div class="space-y-16 sm:space-y-20 max-w-7xl mx-auto">
+
+      <!-- BLOCK 1 -->
+      <div
+        class="flex flex-col lg:flex-row items-center bg-white text-gray-900 rounded-2xl overflow-hidden shadow-lg border-[2px] border-[#155DFC]">
+
+        <!-- Text -->
+        <div class="w-full lg:w-1/2 p-6 sm:p-10">
+          <h3 class="text-2xl sm:text-3xl max-w-md mx-auto font-bold mb-3">
+            Trade, Country, and Port Analysis
+          </h3>
+          <p class="text-gray-700 text-sm sm:text-lg max-w-md mx-auto leading-relaxed">
+            Discover top importing/exporting nations, price movements, shipment volumes, and competitive trends with a
+            single search.
+          </p>
+        </div>
+
+        <!-- Wistia Video -->
+        <div class="w-full lg:w-1/2 relative">
+          <div class="relative pb-[56.25%] h-0 overflow-hidden">
+            <iframe src="https://fast.wistia.net/embed/iframe/bttx95765y" title="Wistia Video 1"
+              allow="autoplay; fullscreen" allowfullscreen class="absolute top-0 left-0 w-full h-full">
+            </iframe>
+          </div>
+        </div>
+      </div>
+
+      <!-- BLOCK 2 -->
+      <div
+        class="flex flex-col lg:flex-row-reverse items-center bg-white text-gray-900 rounded-2xl overflow-hidden shadow-lg border-[2px] border-[#155DFC]">
+
+        <!-- Text -->
+        <div class="w-full lg:w-1/2 p-6 sm:p-10">
+          <h3 class="text-2xl sm:text-3xl max-w-md mx-auto font-bold mb-3">
+            Search by CAS
+          </h3>
+          <p class="text-gray-700 text-sm sm:text-lg max-w-md mx-auto leading-relaxed">
+            Use unique chemical identifiers to find verified buyers and sellers with precise shipment and financial
+            data. This ensures accurate targeting and reveals hidden buyer-seller networks and key decision-makers
+            traditional methods miss.
+          </p>
+        </div>
+
+        <!-- Wistia Video -->
+        <div class="w-full lg:w-1/2 relative">
+          <div class="relative pb-[56.25%] h-0 overflow-hidden">
+            <iframe src="https://fast.wistia.net/embed/iframe/n3u4zyvr4w" title="Wistia Video 2"
+              allow="autoplay; fullscreen" allowfullscreen class="absolute top-0 left-0 w-full h-full">
+            </iframe>
+          </div>
+        </div>
+      </div>
+
+      <!-- BLOCK 3 -->
+      <div
+        class="flex flex-col lg:flex-row items-center bg-white text-gray-900 rounded-2xl overflow-hidden shadow-lg border-[2px] border-[#155DFC]">
+
+        <!-- Text -->
+        <div class="w-full lg:w-1/2 p-6 sm:p-10">
+          <h3 class="text-2xl sm:text-3xl max-w-md mx-auto font-bold mb-3">
+            AI-Powered Predictive Intelligence
+          </h3>
+          <p class="text-gray-700 text-sm sm:text-lg max-w-md mx-auto leading-relaxed">
+            Leverage AI-powered predictive models to forecast demand shifts, pricing changes, and emerging buyer markets
+            weeks ahead. This real-time intelligence helps you identify growth opportunities, reduce risks, and make
+            smarter, data-driven trade decisions.
+          </p>
+        </div>
+
+        <!-- Wistia Video -->
+        <div class="w-full lg:w-1/2 relative">
+          <div class="relative pb-[56.25%] h-0 overflow-hidden">
+            <iframe src="https://fast.wistia.net/embed/iframe/s0sio31639" title="Wistia Video 3"
+              allow="autoplay; fullscreen" allowfullscreen class="absolute top-0 left-0 w-full h-full">
+            </iframe>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- CTA Button -->
+    <div class="text-center mt-10 sm:mt-16">
+
+      <button onclick="openPopup()" class="relative group bg-[#1E79FF] text-white font-semibold rounded-lg 
+           px-6 sm:px-10 py-4 sm:py-5 text-sm sm:text-2xl 
+           hover:scale-[1.03] hover:-translate-y-0.5 transition-transform duration-300 
+           shadow-[0_4px_25px_rgba(30,121,255,0.4),0_0_25px_rgba(30,121,255,0.25)]
+           hover:shadow-[0_8px_30px_rgba(30,121,255,0.55),0_0_40px_rgba(30,121,255,0.4)]
+           overflow-hidden">
+        <span class="relative z-10">RESERVE MY FREE PERSONALIZED DEMO</span>
+
+        <!-- Shine -->
+        <span aria-hidden="true" class="pointer-events-none absolute top-0 -left-[50%] w-[50%] h-full
+        bg-white/40 transition-all duration-[900ms]
+        [clip-path:polygon(0%_0%,55%_0%,100%_100%,25%_100%)]
+        group-hover:left-[120%] group-hover:opacity-0">
+        </span>
+
+        <!-- Gloss -->
+        <span aria-hidden="true" class="pointer-events-none absolute inset-0 bg-white/10
+        opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+        </span>
+      </button>
+
+      <!-- Subtitle -->
+      <p class="mt-4 text-gray-400 text-sm sm:text-base max-w-2xl mx-auto">
+        Unlock predictive insights built for explosive global trade growth.
+      </p>
+        <div class="progressBar flex gap-[2px] sm:gap-[4px] justify-center mt-8 sm:mt-10 flex-wrap"></div>
+    </div>
+
+    <!-- Features -->
+    <div
+      class="mt-8 sm:mt-10 flex flex-wrap justify-center gap-x-6 gap-y-3 text-gray-300 text-[9px] sm:text-base font-medium">
+      <div class="flex items-center gap-2 text-center max-w-sm md:max-w-2xl">
+        <img src="images/yellow-tick.svg" class="w-3 sm:w-5" alt="tick">
+        <span>Rated by 51,000+ businesses for ease of use and actionable intelligence</span>
+      </div>
+    </div>
+
+  </section>
+
+
+  <section class="bg-[#111111] py-8 lg:py-16 px-4 sm:px-8 lg:px-16 text-white">
+
+    <!-- Heading -->
+    <h2 class="text-center text-3xl sm:text-5xl md:text-6xl font-extrabold mb-12">
+      Real Results from Real Traders
+    </h2>
+
+    <!-- Testimonials Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-8 max-w-7xl mx-auto">
+
+      <!-- Testimonial Card 1 -->
+      <div
+        class="relative bg-white text-black rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+
+        <div class="absolute -top-6 right-6 bg-[#DCAF26] rounded-full p-2 sm:p-3 shadow-md">
+          <img src="images/quotes.svg" alt="quote" class="w-6 sm:w-10" />
+        </div>
+
+        <div class="min-h-[150px] sm:min-h-[160px]">
+          <p class="text-sm sm:text-lg leading-relaxed mt-4 text-gray-900">
+            “EXIMAPS has helped me understand my competitors' businesses. Their buyers are now literally 'my' buyers.”
+          </p>
+        </div>
+
+        <div class="flex mt-4 mb-3">
+          <img src="images/Stars.svg" alt="star rating" class="w-20 sm:w-28" />
+        </div>
+
+        <div class="flex items-center gap-3 mt-2">
+          <img src="images/profile1.svg" alt="profile"
+            class="w-10 h-10 sm:w-12 sm:h-12 rounded-full object-cover border border-gray-200" />
+          <div class="text-left">
+            <p class="font-bold text-sm sm:text-base text-gray-900">BHAVIN GUPTA</p>
+            <p class="text-xs sm:text-sm text-gray-700">Owner, Murari Exports (Telangana)</p>
+            <p class="text-[11px] sm:text-xs text-gray-500">
+              A CONQUER license holder since January 2018.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Testimonial Card 2 -->
+      <div
+        class="relative bg-white text-black rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+
+        <div class="absolute -top-6 right-6 bg-[#DCAF26] rounded-full p-2 sm:p-3 shadow-md">
+          <img src="images/quotes.svg" alt="quote" class="w-6 sm:w-10" />
+        </div>
+
+        <div class="min-h-[150px] sm:min-h-[160px]">
+          <p class="text-sm sm:text-lg leading-relaxed mt-4 text-gray-900">
+            “With EXIMAPS, Thea Soaps has got a wonderfully effective platform to reach out to buyers across the world.”
+          </p>
+        </div>
+
+        <div class="flex mt-4 mb-3">
+          <img src="images/Stars.svg" alt="star rating" class="w-20 sm:w-28" />
+        </div>
+
+        <div class="flex items-center gap-3 mt-2">
+          <img src="images/profile2.svg" alt="profile"
+            class="w-10 h-10 sm:w-12 sm:h-12 rounded-full object-cover border border-gray-200" />
+          <div class="text-left">
+            <p class="font-bold text-sm sm:text-base text-gray-900">K. RADHA MANOHARI</p>
+            <p class="text-xs sm:text-sm text-gray-700">Proprietor, Thea Soaps (Telangana)</p>
+            <p class="text-[11px] sm:text-xs text-gray-500">
+              A CONNECT license holder since October 2017.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Testimonial Card 3 -->
+      <div
+        class="relative bg-white text-black rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+
+        <div class="absolute -top-6 right-6 bg-[#DCAF26] rounded-full p-2 sm:p-3 shadow-md">
+          <img src="images/quotes.svg" alt="quote" class="w-6 sm:w-10" />
+        </div>
+
+        <div class="min-h-[150px] sm:min-h-[160px]">
+          <p class="text-sm sm:text-lg leading-relaxed mt-4 text-gray-900">
+            “I have been a user of The Dollar Business EXIMAPS for the last couple of years. I have found the EXIMAPS
+            tool to be very useful for all those who are involved in foreign trade. I believe their trade analytics and
+            support is truly outstanding.” </p>
+        </div>
+
+        <div class="flex mt-4 mb-3">
+          <img src="images/Stars.svg" alt="star rating" class="w-20 sm:w-28" />
+        </div>
+
+        <div class="flex items-center gap-3 mt-2">
+          <img src="images/profile3.svg" alt="profile"
+            class="w-10 h-10 sm:w-12 sm:h-12 rounded-full object-cover border border-gray-200" />
+          <div class="text-left">
+            <p class="font-bold text-sm sm:text-base text-gray-900">HARISH JAISANSARIA</p>
+            <p class="text-xs sm:text-sm text-gray-700">Director, Neelkanth Polymers</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- CTA Section -->
+    <div class="text-center mt-16 sm:mt-20 max-w-3xl mx-auto">
+
+      <button onclick="openPopup()" class="relative group bg-[#1E79FF] text-white font-semibold rounded-lg 
+             px-6 sm:px-10 py-4 sm:py-5 text-sm sm:text-xl uppercase
+             hover:scale-[1.03] hover:-translate-y-0.5 transition-transform duration-300 
+             shadow-[0_4px_25px_rgba(30,121,255,0.4),0_0_25px_rgba(30,121,255,0.25)]
+             hover:shadow-[0_8px_30px_rgba(30,121,255,0.55),0_0_40px_rgba(30,121,255,0.4)]
+             focus:outline-none focus:ring-4 focus:ring-[#1E79FF]/40
+             overflow-hidden">
+        <span class="relative z-10">Reserve Your Personalized EX-IM Demo</span>
+
+        <span aria-hidden="true" class="pointer-events-none absolute top-0 -left-[50%] w-[50%] h-full
+               bg-white/40 transition-all duration-[900ms] ease-[cubic-bezier(0.4,0,0.2,1)]
+               [clip-path:polygon(0%_0%,55%_0%,100%_100%,25%_100%)]
+               group-hover:left-[120%] group-hover:opacity-0">
+        </span>
+
+        <span aria-hidden="true" class="pointer-events-none absolute inset-0 bg-white/10
+               opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+        </span>
+      </button>
+
+      <p class="mt-4 text-gray-400 text-sm sm:text-base max-w-2xl mx-auto">
+        Only a few demo slots left; Trusted by industry leaders worldwide.
+      </p>
+
+      <!-- Your progress bar container (no JS added) -->
+      <div class="progressBar flex gap-[2px] sm:gap-[4px] justify-center mt-8 sm:mt-10 flex-wrap"></div>
+
+    </div>
+
+  </section>
+
+
+  <section
+    class="bg-[#0F0F0F] text-white py-16 px-4 sm:px-8 md:px-16 rounded-[20px] max-w-[1250px] mx-auto mt-16 md:mt-32">
+
+    <!-- Title -->
+    <h2 class="text-center text-[#DCAF26] text-[24px] sm:text-5xl font-extrabold leading-snug">
+      Have You Ever Wondered Why Some Businesses <br />
+      Skyrocket While Others Stall?
+    </h2>
+
+    <!-- Subtitle -->
+    <p class="text-center text-gray-300 mt-4 max-w-4xl mx-auto text-sm sm:text-xl">
+      Ever wonder how a handful of exporters dominate global markets while others struggle for a single connection?
+    </p>
+
+    <!-- Description -->
+    <p class="text-center text-gray-400 mt-6 max-w-5xl mx-auto text-sm sm:text-xl leading-relaxed">
+      Rajesh Malhotra, industry veteran, teamed up with data scientists to analyze millions of shipment records,
+      buyer–seller interactions, and market trends worldwide. The result? A daily micro–insight engine that compounds
+      your strategic advantage.
+    </p>
+
+    <!-- Subheading -->
+    <h3 class="text-center text-white font-semibold mt-8 text-lg sm:text-2xl">
+      The Power of Incremental Insights
+    </h3>
+
+    <!-- Comparison Box -->
+    <div class="mt-8 mx-auto max-w-2xl bg-white rounded-xl p-4 sm:p-6 text-black shadow-lg border border-[#F4C542]">
+
+      <!-- Row 1 -->
+      <div class="flex justify-between items-center border-b border-gray-200 pb-3 mb-3">
+        <div class="flex items-center gap-2">
+          <img src="images/arrow-up.svg" alt="Up" class="md:w-6 md:h-6 w-4 h-4" />
+          <span class="text-gray-700 text-[12px] sm:text-lg">1% smarter every day</span>
+        </div>
+        <p class="text-green-600 font-semibold text-[12px] sm:text-lg">
+          31x stronger market position
+        </p>
+      </div>
+
+      <!-- Row 2 -->
+      <div class="flex justify-between items-center">
+        <div class="flex items-center gap-2">
+          <img src="images/target.svg" alt="Target" class="md:w-6 md:h-6 w-4 h-4" />
+          <span class="text-gray-700 text-[12px] sm:text-lg">1% less data–driven</span>
+        </div>
+        <p class="text-red-600 font-semibold text-[12px] sm:text-lg">
+          97% missed opportunities
+        </p>
+      </div>
+
+    </div>
+
+    <!-- CTA + Subtitle + Progress Bar Placeholder -->
+    <div class="flex flex-col items-center mt-10 text-center">
+
+      <!-- CTA Button -->
+      <button onclick="openPopup()" class="relative group bg-[#1E79FF] text-white font-semibold rounded-lg 
+             px-6 sm:px-10 py-4 sm:py-5 text-sm sm:text-2xl uppercase
+             hover:scale-[1.03] hover:-translate-y-0.5 transition-transform duration-300 
+             shadow-[0_4px_25px_rgba(30,121,255,0.4),0_0_25px_rgba(30,121,255,0.25)]
+             hover:shadow-[0_8px_30px_rgba(30,121,255,0.55),0_0_40px_rgba(30,121,255,0.4)]
+             focus:outline-none focus:ring-4 focus:ring-[#1E79FF]/40
+             overflow-hidden">
+
+        <span class="relative z-10">BOOK YOUR DEMO NOW, SEATS FILL FAST</span>
+
+        <!-- Sweeping Shine -->
+        <span aria-hidden="true" class="pointer-events-none absolute top-0 -left-[50%] w-[50%] h-full
+               bg-white/40 transition-all duration-[900ms] ease-[cubic-bezier(0.4,0,0.2,1)]
+               [clip-path:polygon(0%_0%,55%_0%,100%_100%,25%_100%)]
+               group-hover:left-[120%] group-hover:opacity-0">
+        </span>
+
+        <!-- Glossy Overlay -->
+        <span aria-hidden="true" class="pointer-events-none absolute inset-0 bg-white/10
+               opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+        </span>
+
+      </button>
+
+      <!-- Subtitle -->
+      <p class="mt-4 text-gray-400 text-sm sm:text-base max-w-2xl leading-relaxed">
+        Claim your spot and experience seamless proactive customer engagement.
+      </p>
+
+      <!-- Progress Bar Placeholder -->
+      <div class="progressBar justify-center mt-6 sm:mt-8 flex gap-[3px] sm:gap-[4px] flex-wrap"></div>
+
+    </div>
+
+  </section>
+
+
+  <section
+    class="bg-white pt-12 sm:pt-20 pb-12 sm:pb-16 px-4 sm:px-8 md:px-12 lg:px-20 flex flex-col items-center text-center md:text-left">
+
+    <!-- Title -->
+    <h2
+      class="text-[22px] sm:text-4xl md:text-6xl font-extrabold text-[#0F0F0F] leading-snug max-w-3xl sm:max-w-4xl mx-auto mb-8 sm:mb-12">
+      Experience Global Trade on the
+      <br class="hidden sm:block" />
+      <span class="block sm:inline">Move With Our Mobile App</span>
+    </h2>
+
+    <!-- Content Wrapper -->
+    <div class="flex flex-col md:flex-row items-center justify-center gap-6 sm:gap-10 md:gap-16 max-w-6xl mx-auto">
+
+      <!-- Image Section -->
+      <div class="flex justify-center md:justify-end w-full md:w-1/2">
+        <img src="images/mobile-app-preview.svg" alt="Mobile App Preview"
+          class="rounded-2xl shadow-lg w-[85%] sm:w-[80%] md:w-[90%] lg:w-[500px] max-w-[350px] sm:max-w-none" />
+      </div>
+
+      <!-- Text Section -->
+      <div
+        class="w-full md:w-1/2 text-gray-800 text-sm sm:text-base md:text-2xl leading-relaxed mt-6 md:mt-0 px-1 sm:px-0">
+        <p class="mb-4 sm:mb-6">
+          We’ve built our app to blend seamlessly with your workflow,
+          allowing you to track live shipments, analyze global trends, and
+          connect with buyers and decision-makers in just a tap. With
+          real-time notifications and user-friendly navigation, the right
+          trade decision is always closer.
+        </p>
+
+        <p>
+          Stay ahead of the curve with data-driven insights, instant alerts,
+          and smooth access to verified buyers all within your pocket.
+        </p>
+      </div>
+    </div>
+
+    <!-- CTA Section -->
+    <div class="flex flex-col items-center mt-10 sm:mt-12 text-center">
+
+      <!-- CTA Button -->
+      <button onclick="openPopup()" class="relative group bg-[#1E79FF] text-white font-semibold rounded-lg
+             px-5 sm:px-10 py-3 sm:py-5 text-[14px] sm:text-2xl
+             hover:scale-[1.03] hover:-translate-y-0.5 transition-transform duration-300
+             shadow-[0_3px_25px_rgba(30,121,255,0.35),0_0_15px_rgba(30,121,255,0.2)]
+             hover:shadow-[0_6px_20px_rgba(30,121,255,0.55),0_0_35px_rgba(30,121,255,0.35)]
+             focus:outline-none focus:ring-4 focus:ring-[#1E79FF]/40
+             w-full sm:w-auto max-w-[320px] sm:max-w-max overflow-hidden">
+        <span class="relative z-10">
+          Book Your Exclusive Demo Before It’s Gone
+        </span>
+
+        <!-- Sweeping Shine -->
+        <span aria-hidden="true" class="pointer-events-none absolute top-0 -left-[50%] w-[50%] h-full
+               bg-white/40 transition-all duration-[900ms] ease-[cubic-bezier(0.4,0,0.2,1)]
+               [clip-path:polygon(0%_0%,55%_0%,100%_100%,25%_100%)]
+               group-hover:left-[120%] group-hover:opacity-0"></span>
+
+        <!-- Glossy Overlay -->
+        <span aria-hidden="true" class="pointer-events-none absolute inset-0 bg-white/10
+               opacity-0 group-hover:opacity-100 transition-opacity duration-500"></span>
+      </button>
+
+      <!-- Subtitle -->
+      <p class="mt-3 sm:mt-4 text-gray-600 text-xs sm:text-base max-w-xs sm:max-w-2xl leading-relaxed">
+        Don’t miss out on data-driven growth trusted across 181+ countries.
+      </p>
+
+      <!-- Progress Bar -->
+      <div class="progressBar flex gap-[2px] sm:gap-[4px] justify-center mt-8 sm:mt-10 flex-wrap"></div>
+
+    </div>
+  </section>
+
+
+
+  <section class="bg-[#fff] py-4 sm:py-16 px-4 sm:px-8 lg:px-16 text-white max-w-full mx-auto">
+
+    <!-- Title -->
+    <h2
+      class="text-center text-[23px] sm:text-[3rem] text-black font-bold mb-10 sm:mb-12 leading-snug sm:leading-tight">
+      Hear Why Our Members Would Never Switch Back to <br />
+      <span class="block sm:inline"> Old Trade Platforms…</span>
+    </h2>
+
+    <!-- Testimonials Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 lg:gap-8 max-w-7xl mx-auto">
+
+      <!-- CARD 1 -->
+      <div class="relative bg-[#F7F7F7] text-black rounded-xl p-5 sm:p-8 shadow-md flex flex-col justify-between">
+
+        <div class="absolute -top-5 sm:-top-6 right-5 sm:right-6 bg-[#DCAF26] rounded-full p-2 sm:p-3">
+          <img src="images/quotes.svg" alt="quote" class="w-5 sm:w-12" />
+        </div>
+
+        <p class="text-sm sm:text-base leading-relaxed mt-4">
+          “Thanks to EXIMAPS, I have developed a good rapport with a US buyer and am confident he will give the order to
+          me.”
+        </p>
+
+        <div class="mt-5 sm:mt-6">
+          <img src="images/Stars.svg" class="w-16 sm:w-28 mb-3 sm:mb-4" />
+
+          <div class="flex items-center gap-3 sm:gap-4">
+            <img src="images/profile1.svg" class="w-10 h-10 sm:w-12 sm:h-12 rounded-full" />
+
+            <div>
+              <p class="font-bold text-sm sm:text-base">ASHOK KUMAR</p>
+              <p class="text-xs sm:text-sm text-gray-700">Proprietor, Abi Exports (Tamil Nadu)</p>
+              <p class="text-[10px] sm:text-xs text-gray-500 mt-[2px]">A CONNECT license holder since November 2017.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="relative bg-[#F7F7F7] text-black rounded-xl p-5 sm:p-8 shadow-md flex flex-col justify-between">
+
+        <div class="absolute -top-5 sm:-top-6 right-5 sm:right-6 bg-[#DCAF26] rounded-full p-2 sm:p-3">
+          <img src="images/quotes.svg" alt="quote" class="w-5 sm:w-12" />
+        </div>
+
+        <p class="text-sm sm:text-base leading-relaxed mt-4">
+          “EXIMAPS is a revolutionary technology in foreign trade. I strongly recommend all exporters and importers
+          around the world to try EXIMAPS and experience this mind-moving platform.”
+        </p>
+
+        <div class="mt-5 sm:mt-6">
+          <img src="images/Stars.svg" class="w-16 sm:w-28 mb-3 sm:mb-4" />
+
+          <div class="flex items-center gap-3 sm:gap-4">
+            <img src="images/profile2.svg" class="w-10 h-10 sm:w-12 sm:h-12 rounded-full" />
+
+            <div>
+              <p class="font-bold text-sm sm:text-base">DR. A. K. SENGUPTA, PH.D.</p>
+              <p class="text-xs sm:text-sm text-gray-700">FOREIGN TRADE</p>
+              <p class="text-[10px] sm:text-xs text-gray-500 mt-[2px]">Former Dean - (IIFT), New Delhi, India</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="relative bg-[#F7F7F7] text-black rounded-xl p-5 sm:p-8 shadow-md flex flex-col justify-between">
+
+        <div class="absolute -top-5 sm:-top-6 right-5 sm:right-6 bg-[#DCAF26] rounded-full p-2 sm:p-3">
+          <img src="images/quotes.svg" alt="quote" class="w-5 sm:w-12" />
+        </div>
+
+        <p class="text-sm sm:text-base leading-relaxed mt-4">
+          “CONNECT provided me with buyer profiles that materialised into high-value business.”
+        </p>
+
+        <div class="mt-5 sm:mt-6">
+          <img src="images/Stars.svg" class="w-16 sm:w-28 mb-3 sm:mb-4" />
+
+          <div class="flex items-center gap-3 sm:gap-4">
+            <img src="images/profile3.svg" class="w-10 h-10 sm:w-12 sm:h-12 rounded-full" />
+
+            <div>
+              <p class="font-bold text-sm sm:text-base">AMAR PAMU</p>
+              <p class="text-xs sm:text-sm text-gray-700">Proprietor, Venus Impex (Maharashtra)</p>
+              <p class="text-[10px] sm:text-xs text-gray-500 mt-[2px]">A CONNECT license holder since December 2016.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- CTA BUTTON -->
+    <div class="flex flex-col items-center mt-14 sm:mt-16 text-center">
+
+      <button onclick="openPopup()" class="relative group bg-[#1E79FF] text-white font-semibold rounded-lg 
+             px-6 sm:px-10 py-3 sm:py-5 text-[13px] sm:text-xl uppercase
+             hover:scale-[1.03] hover:-translate-y-0.5 transition-transform duration-300 
+             shadow-[0_3px_25px_rgba(30,121,255,0.35),0_0_18px_rgba(30,121,255,0.25)]
+             hover:shadow-[0_6px_25px_rgba(30,121,255,0.55),0_0_40px_rgba(30,121,255,0.4)]
+             focus:outline-none focus:ring-4 focus:ring-[#1E79FF]/40 overflow-hidden">
+
+        <span class="relative z-10">Start Your Global Trade Growth Journey</span>
+
+        <span aria-hidden="true" class="pointer-events-none absolute top-0 -left-[50%] w-[50%] h-full
+               bg-white/40 transition-all duration-[900ms]
+               [clip-path:polygon(0%_0%,55%_0%,100%_100%,25%_100%)]
+               group-hover:left-[120%] group-hover:opacity-0"></span>
+
+        <span aria-hidden="true" class="pointer-events-none absolute inset-0 bg-white/10
+               opacity-0 group-hover:opacity-100 transition-opacity duration-500"></span>
+      </button>
+
+      <p class="mt-3 sm:mt-4 text-gray-500 text-xs sm:text-base max-w-sm sm:max-w-2xl leading-relaxed">
+        Over a decade powering Fortune 500 and SMEs alike limited seats available.
+      </p>
+
+      <!-- Progress Bar -->
+      <div class="progressBar flex gap-[2px] sm:gap-[4px] justify-center mt-8 sm:mt-10 flex-wrap"></div>
+      <!-- JS will generate 24 boxes -->
+    </div>
+    </div>
+
+  </section>
+
+
+  <section class="relative w-full overflow-hidden">
+
+    <!-- TOP WHITE SECTION -->
+    <div class="bg-white text-center px-4 sm:px-10 lg:px-20 pt-10 sm:pt-14 pb-36 sm:pb-60 md:pb-72 relative">
+
+      <h2 class="text-xl sm:text-6xl font-bold mb-4 sm:mb-6 leading-snug sm:leading-tight">
+        Step Into the Future of Trade at
+        <span class="block sm:inline">Dubai World Trade Centre</span>
+      </h2>
+
+      <p class="text-gray-700 text-sm sm:text-lg leading-relaxed max-w-5xl mx-auto md:mb-[9%] mb-0">
+        Feeling limited by conventional ways of finding global trade partners? The world’s top trade minds are coming
+        together in Dubai uniting visionary names like RAKEZ and The Dollar Business, ICICI, and the trailblazing
+        Experience Centre at Dubai World Trade Centre. Through these alliances, you can access cutting-edge analytics,
+        tap into millions of verified global buyers and sellers, and experience data-driven growth like never before.
+        Whether you’re an SME looking to expand or an enterprise seeking a competitive edge, these partnerships are
+        designed to open doors and turn your ambitions into everyday victories. Trade, connect, and grow right where
+        innovation lives.
+      </p>
+
+      <!-- IMAGE BOX -->
+      <div class="absolute left-1/2 bottom-[-6rem] sm:bottom-[-8rem] md:bottom-[-10rem]
+             z-30 w-[92%] sm:w-[75%] md:w-[55%] aspect-video
+             rounded-lg sm:rounded-xl shadow-2xl overflow-hidden" style="transform: translateX(-50%);">
+        <div class="relative w-full h-full">
+
+          <!-- IMAGES (Static — If you want actual sliding, tell me!) -->
+          <div class="relative">
+            <img src="images/slider-DB.jpg" class="w-full h-full object-cover" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/30 via-black/10 to-transparent"></div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <!-- BOTTOM BLACK SECTION -->
+    <div class="bg-black pt-36 sm:pt-72 md:pt-48 pb-8 sm:pb-20 text-center text-white relative z-20">
+
+      <!-- CTA BUTTON -->
+      <button onclick="openPopup()" class="relative group bg-[#1E79FF] text-white font-semibold rounded-lg 
+             px-5 sm:px-10 py-3 sm:py-5 text-base sm:text-2xl 
+             hover:scale-[1.03] hover:-translate-y-0.5 transition-transform duration-300 
+             shadow-[0_6px_20px_rgba(30,121,255,0.45),0_0_25px_rgba(30,121,255,0.35)]
+             hover:shadow-[0_10px_35px_rgba(30,121,255,0.6),0_0_55px_rgba(30,121,255,0.5)]
+             focus:outline-none focus:ring-4 focus:ring-[#1E79FF]/40
+             overflow-hidden">
+        <span class="relative z-10">Visit the Experience Centre at DWTC</span>
+
+        <!-- Shine -->
+        <span aria-hidden="true" class="pointer-events-none absolute top-0 -left-[50%] w-[50%] h-full
+               bg-white/40 transition-all duration-[900ms]
+               [clip-path:polygon(0%_0%,55%_0%,100%_100%,25%_100%)]
+               group-hover:left-[120%] group-hover:opacity-0"></span>
+
+        <!-- Gloss -->
+        <span aria-hidden="true" class="pointer-events-none absolute inset-0 bg-white/10
+               opacity-0 group-hover:opacity-100 transition-opacity duration-500"></span>
+      </button>
+
+      <!-- SUBTITLE -->
+      <p class="mt-5 sm:mt-6 text-gray-400 text-xs sm:text-base max-w-sm sm:max-w-4xl mx-auto leading-relaxed px-4">
+        Explore partnership-driven opportunities, witness innovation in action,
+        and make your next big business move today.
+      </p>
+
+      <!-- Progress Bar -->
+      <div class="progressBar flex gap-[2px] sm:gap-[4px] justify-center mt-8 sm:mt-10 flex-wrap"></div>
+      <!-- JS will generate 24 boxes -->
+    </div>
+    </div>
+
+  </section>
+
+
+  <section class="bg-black text-white py-4 sm:py-10 px-4 sm:px-6 text-center relative overflow-hidden">
+
+    <!-- Title -->
+    <h2 class="text-[23px] sm:text-4xl font-bold mb-10 sm:mb-16 leading-snug sm:leading-tight px-2">
+      Join 51,000+ Businesses Already Accelerating Their Global Growth
+    </h2>
+
+    <!-- Testimonials Wrapper -->
+    <div id="testimonialWrapper"
+      class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-center max-w-6xl mx-auto transition-all duration-700">
+
+      <!-- Card 1 -->
+      <div
+        class="testimonial-card relative bg-white text-black rounded-lg sm:rounded-xl p-5 sm:p-8 shadow-lg transition-all duration-700 ease-in-out">
+        <div class="absolute -top-5 sm:-top-6 left-1/2 -translate-x-1/2">
+          <img src="images/quotes.svg" class="w-10 sm:w-14 h-10 sm:h-14" />
+        </div>
+
+        <p class="mt-5 sm:mt-6 text-sm sm:text-base leading-relaxed">
+          Shaheen is a good teacher for a person like me, and exporter who knows very little IT options. She cruised me
+          to whatever I wanted and people like Shaheen will glitter for a company like Dollar Business!
+        </p>
+
+        <div class="flex justify-center sm:justify-start mt-4 sm:mt-5">
+          <img src="images/Stars.svg" class="w-4 h-4 sm:w-40" />
+        </div>
+
+        <div class="flex items-center justify-center sm:justify-start gap-3 mt-4 sm:mt-5">
+          <img src="images/profile1.svg" class="w-9 h-9 sm:w-12 sm:h-12 rounded-full object-cover" />
+          <p class="font-bold text-sm sm:text-base">Thoykkat Muralidharan</p>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div
+        class="testimonial-card relative bg-white text-black rounded-lg sm:rounded-xl p-5 sm:p-8 shadow-lg transition-all duration-700 ease-in-out">
+        <div class="absolute -top-5 sm:-top-6 left-1/2 -translate-x-1/2">
+          <img src="images/quotes.svg" class="w-10 sm:w-14 h-10 sm:h-14" />
+        </div>
+
+        <p class="mt-5 sm:mt-6 text-sm sm:text-base leading-relaxed">
+          The Dollar business portal is a reliable and comprehensive platform for anyone involved in international
+          trade. It offers detailed trade data, HS code insights, and real-time analytics that help make informed
+          decisions. The user interface is intuitive, and the support team is responsive. Highly recommended!
+        </p>
+
+        <div class="flex justify-center sm:justify-start mt-4 sm:mt-5">
+          <img src="images/Stars.svg" class="w-4 h-4 sm:w-40" />
+        </div>
+
+        <div class="flex items-center justify-center sm:justify-start gap-3 mt-4 sm:mt-5">
+          <img src="images/profile2.svg" class="w-9 h-9 sm:w-12 sm:h-12 rounded-full object-cover" />
+          <p class="font-bold text-sm sm:text-base">Miral Gandhi</p>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div
+        class="testimonial-card relative bg-white text-black rounded-lg sm:rounded-xl p-5 sm:p-8 shadow-lg transition-all duration-700 ease-in-out">
+        <div class="absolute -top-5 sm:-top-6 left-1/2 -translate-x-1/2">
+          <img src="images/quotes.svg" class="w-10 sm:w-14 h-10 sm:h-14" />
+        </div>
+
+        <p class="mt-5 sm:mt-6 text-sm sm:text-base leading-relaxed">
+          The demo session was excellent. Siva conducted it with great professionalism and efficiency and was extremely
+          helpful throughout. Appreciate the support and looking forward to future interactions.
+
+        </p>
+
+        <div class="flex justify-center sm:justify-start mt-4 sm:mt-5">
+          <img src="images/Stars.svg" class="w-4 h-4 sm:w-40" />
+        </div>
+
+        <div class="flex items-center justify-center sm:justify-start gap-3 mt-4 sm:mt-5">
+          <img src="images/profile3.svg" class="w-9 h-9 sm:w-12 sm:h-12 rounded-full object-cover" />
+          <p class="font-bold text-sm sm:text-base">Atul Patel</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Navigation -->
+    <div class="flex justify-center items-center gap-4 sm:gap-6 mt-10 sm:mt-12">
+      <button id="prevBtn"
+        class="w-9 h-9 sm:w-10 sm:h-10 flex items-center justify-center rounded-full border border-gray-500 hover:bg-gray-800 transition text-lg">
+        ←
+      </button>
+      <button id="nextBtn"
+        class="w-9 h-9 sm:w-10 sm:h-10 flex items-center justify-center rounded-full border border-gray-500 hover:bg-gray-800 transition text-lg">
+        →
+      </button>
+    </div>
+  </section>
+
+
+  <section class="bg-[#F9FAFB] py-6 lg:py-16 sm:py-20 px-4 sm:px-6 text-center">
+    <h2 class="text-[23px] sm:text-4xl md:text-6xl font-bold text-black leading-snug sm:leading-tight">
+      Transform Your Trade Strategy <br class="hidden sm:block" />
+      with <span class="text-[#1C1C1C]">EX-IM Power</span>
+    </h2>
+
+    <div class="flex justify-center mt-4 sm:mt-12">
+      <img src="images/map-image.svg" alt="World trade map"
+        class="w-full max-w-[300px] sm:max-w-2xl md:max-w-3xl object-contain" />
+    </div>
+
+    <p class="mt-8 sm:mt-10 max-w-3xl mx-auto text-gray-700 text-sm sm:text-xl leading-relaxed px-2">
+      The Dollar Business is dedicated to empowering your export-import success
+      with proven, human-verified contacts, advanced Nexus mapping, and predictive
+      buyer or seller insights. Experience live Nexus mapping and pipeline
+      acceleration with a personalized demo.
+    </p>
+
+    <div class="text-center text-white mt-8 sm:mt-12">
+      <button onclick="openPopup()" class="relative group bg-[#1E79FF] text-white font-semibold rounded-lg 
+             px-6 sm:px-10 py-3 sm:py-5 text-base sm:text-3xl 
+             hover:scale-[1.03] hover:-translate-y-0.5 transition-transform duration-300 
+             shadow-[0_6px_25px_rgba(30,121,255,0.45),0_0_25px_rgba(30,121,255,0.35)]
+             hover:shadow-[0_10px_35px_rgba(30,121,255,0.6),0_0_55px_rgba(30,121,255,0.5)]
+             focus:outline-none focus:ring-4 focus:ring-[#1E79FF]/40
+             overflow-hidden">
+        <span class="relative z-10">Start Your Global Trade Growth Journey</span>
+
+        <span aria-hidden="true" class="pointer-events-none absolute top-0 -left-[50%] w-[50%] h-full
+               bg-white/40 transition-all duration-[900ms] ease-[cubic-bezier(0.4,0,0.2,1)]
+               [clip-path:polygon(0%_0%,55%_0%,100%_100%,25%_100%)]
+               group-hover:left-[120%] group-hover:opacity-0"></span>
+
+        <span aria-hidden="true" class="pointer-events-none absolute inset-0 bg-white/10
+               opacity-0 group-hover:opacity-100 transition-opacity duration-500"></span>
+      </button>
+
+      <p class="mt-5 sm:mt-6 text-gray-500 text-xs sm:text-base max-w-2xl mx-auto leading-relaxed px-3">
+        Over a decade powering Fortune 500 and SMEs alike; Limited seats available.
+      </p>
+
+      <!-- Progress Bar -->
+      <div class="progressBar flex gap-[2px] sm:gap-[4px] justify-center mt-8 sm:mt-10 flex-wrap"></div>
+      <!-- JS will generate 24 boxes -->
+    </div>
+
+    </div>
+  </section>
+
+
+
+  <section class="bg-white py-4 md:py-16 px-6 text-center overflow-hidden">
+
+    <!-- Heading -->
+    <h2 class="text-[20px] sm:text-5xl font-bold text-black mb-6">
+      51,000+ Businesses and 50+ Global Partners Can’t Be Wrong
+    </h2>
+
+    <!-- Paragraph -->
+    <p class="text-gray-700 max-w-4xl mx-auto text-sm sm:text-lg leading-relaxed mb-12">
+      With over 51,000 paid clients across 51+ countries and partnerships with
+      leading global trade institutions, The Dollar Business is the trusted
+      choice for export–import intelligence. Our community spans Fortune 500
+      enterprises and fast-growing SMEs alike, united by their drive for
+      data-backed growth.
+    </p>
+
+    <!-- Infinite Logo Slider -->
+    <div class="relative w-full overflow-hidden">
+      <div class="flex animate-scroll gap-10 sm:gap-16 items-center">
+        <!-- Repeat logos twice for infinite effect -->
+        <img src="images/logo-1.svg" class="h-10 sm:h-14 object-contain" />
+        <img src="images/logo-2.svg" class="h-10 sm:h-14 object-contain" />
+        <img src="images/logo-3.svg" class="h-10 sm:h-14 object-contain" />
+        <img src="images/logo-4.svg" class="h-10 sm:h-14 object-contain" />
+        <img src="images/logo-5.svg" class="h-10 sm:h-14 object-contain" />
+        <img src="images/logo-6.svg" class="h-10 sm:h-14 object-contain" />
+        <img src="images/logo-7.svg" class="h-10 sm:h-14 object-contain" />
+
+        <!-- Duplicate for infinite scroll -->
+        <img src="images/logo-1.svg" class="h-10 sm:h-14 object-contain" />
+        <img src="images/logo-2.svg" class="h-10 sm:h-14 object-contain" />
+        <img src="images/logo-3.svg" class="h-10 sm:h-14 object-contain" />
+        <img src="images/logo-4.svg" class="h-10 sm:h-14 object-contain" />
+        <img src="images/logo-5.svg" class="h-10 sm:h-14 object-contain" />
+        <img src="images/logo-6.svg" class="h-10 sm:h-14 object-contain" />
+        <img src="images/logo-7.svg" class="h-10 sm:h-14 object-contain" />
+      </div>
+    </div>
+
+    <!-- CTA & Bottom Part -->
+    <div class="text-center text-white mt-8 sm:mt-12">
+
+      <!-- CTA Button -->
+      <button onclick="openPopup()" class="relative group bg-[#1E79FF] text-white font-semibold rounded-lg
+             px-6 sm:px-10 py-3 sm:py-5 text-sm sm:text-2xl
+             hover:scale-[1.03] hover:-translate-y-0.5 transition-transform duration-300
+             shadow-[0_4px_25px_rgba(30,121,255,0.4),0_0_25px_rgba(30,121,255,0.25)]
+             hover:shadow-[0_8px_35px_rgba(30,121,255,0.6),0_0_45px_rgba(30,121,255,0.45)]
+             focus:outline-none focus:ring-4 focus:ring-[#1E79FF]/40
+             overflow-hidden">
+        <span class="relative z-10">
+          GRAB YOUR DEMO CALL FOR DOMINANCE
+        </span>
+
+        <!-- Shine Swipe -->
+        <span aria-hidden="true" class="pointer-events-none absolute top-0 -left-[50%] w-[50%] h-full
+               bg-white/40 transition-all duration-[900ms]
+               [clip-path:polygon(0%_0%,55%_0%,100%_100%,25%_100%)]
+               group-hover:left-[120%] group-hover:opacity-0">
+        </span>
+
+        <!-- Gloss -->
+        <span aria-hidden="true" class="pointer-events-none absolute inset-0 bg-white/10 opacity-0
+               group-hover:opacity-100 transition-opacity duration-500">
+        </span>
+      </button>
+
+      <!-- Subtitle -->
+      <p class="mt-5 sm:mt-6 text-gray-500 text-xs sm:text-base max-w-2xl mx-auto leading-relaxed px-3">
+        Predictive buyer or seller insights and verified contacts; Don’t let competitors win.
+      </p>
+
+      <!-- Progress Bar -->
+      <div class="progressBar flex gap-[2px] sm:gap-[4px] justify-center mt-8 sm:mt-10 flex-wrap"></div>
+      <!-- JS will generate 24 boxes -->
+    </div>
+
+
+    </div>
+  </section>
+
+
+  <section class="bg-white text-black py-4 sm:py-0 px-4 sm:px-6">
+    <!-- Heading -->
+    <h2 class="text-[23px] sm:text-5xl font-bold text-center mb-10 sm:mb-12 leading-snug">
+      FAQs: <span class="text-[#1C1C1C]">Real Talk</span>
+    </h2>
+
+    <!-- FAQ List -->
+    <div class="max-w-3xl mx-auto space-y-3 sm:space-y-4">
+
+      <!-- FAQ ITEM 1 -->
+      <div class="bg-[#F7F7F7] rounded-lg shadow-sm overflow-hidden">
+        <button onclick="toggleFaq(0)"
+          class="w-full flex justify-between items-center text-left px-4 sm:px-6 py-4 sm:py-5 font-semibold text-sm sm:text-base">
+          <span class="pr-4">Is the platform easy to use?</span>
+          <img src="images/arrow.svg" id="arrow-0"
+            class="w-5 h-5 sm:w-6 sm:h-6 transition-transform duration-300 rotate-180">
+        </button>
+
+        <div id="faq-0" class="px-4 sm:px-6 pb-4 sm:pb-5 text-gray-700 text-sm sm:text-base leading-relaxed block">
+          Not at all. If you can use a web browser, you’re already 90% there. Just log in,
+          enter your product or HS code, and get actionable contacts and insights. No
+          training required, and most users start closing real leads within the first week.
+        </div>
+      </div>
+
+      <!-- FAQ ITEM 2 -->
+      <div class="bg-[#F7F7F7] rounded-lg shadow-sm overflow-hidden">
+        <button onclick="toggleFaq(1)"
+          class="w-full flex justify-between items-center text-left px-4 sm:px-6 py-4 sm:py-5 font-semibold text-sm sm:text-base">
+          <span class="pr-4">How do I know the contacts are real, not just scraped from the web?</span>
+          <img src="images/arrow.svg" id="arrow-1"
+            class="w-5 h-5 sm:w-6 sm:h-6 transition-transform duration-300 rotate-0">
+        </button>
+
+        <div id="faq-1" class="px-4 sm:px-6 pb-4 sm:pb-5 text-gray-700 text-sm sm:text-base leading-relaxed hidden">
+          All contacts are verified through our in-house data validation process and
+          cross-checked with multiple trade data sources, ensuring you get only high-quality
+          verified buyers and sellers.
+        </div>
+      </div>
+
+      <!-- FAQ ITEM 3 -->
+      <div class="bg-[#F7F7F7] rounded-lg shadow-sm overflow-hidden">
+        <button onclick="toggleFaq(2)"
+          class="w-full flex justify-between items-center text-left px-4 sm:px-6 py-4 sm:py-5 font-semibold text-sm sm:text-base">
+          <span class="pr-4">Can I actually track deals and buyer relationships, or will I get lost in data?</span>
+          <img src="images/arrow.svg" id="arrow-2"
+            class="w-5 h-5 sm:w-6 sm:h-6 transition-transform duration-300 rotate-0">
+        </button>
+
+        <div id="faq-2" class="px-4 sm:px-6 pb-4 sm:pb-5 text-gray-700 text-sm sm:text-base leading-relaxed hidden">
+          Yes. The platform’s dashboard allows you to track each lead, manage communication
+          history, and measure success with built-in performance analytics.
+        </div>
+      </div>
+
+      <!-- FAQ ITEM 4 -->
+      <div class="bg-[#F7F7F7] rounded-lg shadow-sm overflow-hidden">
+        <button onclick="toggleFaq(3)"
+          class="w-full flex justify-between items-center text-left px-4 sm:px-6 py-4 sm:py-5 font-semibold text-sm sm:text-base">
+          <span class="pr-4">I'm busy. Will this take up my whole day every time I log in?</span>
+          <img src="images/arrow.svg" id="arrow-3"
+            class="w-5 h-5 sm:w-6 sm:h-6 transition-transform duration-300 rotate-0">
+        </button>
+
+        <div id="faq-3" class="px-4 sm:px-6 pb-4 sm:pb-5 text-gray-700 text-sm sm:text-base leading-relaxed hidden">
+          No. Our system is designed to save time by prioritizing your best opportunities
+          and giving you quick filters to find relevant trade matches fast.
+        </div>
+      </div>
+
+      <!-- FAQ ITEM 5 -->
+      <div class="bg-[#F7F7F7] rounded-lg shadow-sm overflow-hidden">
+        <button onclick="toggleFaq(4)"
+          class="w-full flex justify-between items-center text-left px-4 sm:px-6 py-4 sm:py-5 font-semibold text-sm sm:text-base">
+          <span class="pr-4">What should I do if I have a question or need assistance?</span>
+          <img src="images/arrow.svg" id="arrow-4"
+            class="w-5 h-5 sm:w-6 sm:h-6 transition-transform duration-300 rotate-0">
+        </button>
+
+        <div id="faq-4" class="px-4 sm:px-6 pb-4 sm:pb-5 text-gray-700 text-sm sm:text-base leading-relaxed hidden">
+          Our support team is always available through chat, call, or email. We’ll guide you
+          through any step, from setup to using advanced analytics.
+        </div>
+      </div>
+
+    </div>
+
+    <div class="text-center mt-4 sm:mt-20 mb-32 md:mb-12 border-t border-gray-200 pt-10 sm:pt-12 pb-8">
+      <div class="flex justify-center">
+        <img src="images/footer-logo.svg" class="w-16 sm:w-24 mb-6" />
+      </div>
+      <p class="text-gray-600 text-xs sm:text-sm">
+        All Rights Reserved © 2025 Getnos Pvt. Ltd.
+      </p>
+    </div>
+  </section>
+
+  <!-- Fixed Footer Timer Bar -->
+  <footer id="sticky-footer" class="hidden opacity-0 pointer-events-none
+         fixed bottom-4 left-1/2 -translate-x-1/2 w-full
+         transition-all duration-500 z-50">
+
+    <div class="mx-auto max-w-screen-2xl px-2 sm:px-4">
+      <div class="bg-gradient-to-r from-[#DCAF26] to-[#DCAF26] text-white
+               rounded-2xl shadow-2xl backdrop-blur-sm
+               px-4 py-2 sm:px-6 sm:py-5 lg:px-8 lg:py-4">
+
+        <div class="flex flex-col gap-5 lg:flex-row lg:items-center lg:justify-between">
+
+          <!-- LEFT: Timer -->
+          <div class="flex items-center justify-center gap-3">
+            <img src="images/stopwatch-icon.png" class="w-6 h-6 sm:w-12 sm:h-12" />
+            <span id="timer-display" class="font-extrabold text-xl sm:text-4xl leading-none">
+              05 : 00
+            </span>
+          </div>
+
+          <!-- MIDDLE -->
+          <div class="text-center lg:text-center">
+            <div class="uppercase font-bold tracking-wide text-[11px] sm:text-base lg:text-xl">
+              LIVE buyer contacts - Predictive shipment alerts
+            </div>
+            <div class="hidden sm:block text-white/90 text-xs sm:text-sm lg:text-sm mt-1">
+              One platform. Zero guesswork. 51,000+ businesses can’t be wrong.
+            </div>
+          </div>
+
+          <!-- CTA -->
+          <div class="flex justify-center lg:justify-end">
+            <button onclick="openPopup()" class="group relative isolate overflow-hidden
+                     inline-flex items-center justify-center
+                     rounded-full px-8 sm:px-10 lg:px-8 py-3 sm:py-4 lg:py-3
+                     text-[11px] sm:text-lg lg:text-lg font-bold tracking-wide
+                     text-white border border-white
+                     bg-gradient-to-r from-[#155DFC] to-[#155DFC]
+                     shadow-[0_8px_25px_rgba(255,255,255,0.35)]
+                     hover:shadow-[0_10px_30px_rgba(255,255,255,0.45)]
+                     transition-transform duration-300 hover:-translate-y-0.5">
+
+              <span class="relative z-10">BOOK YOUR EXCLUSIVE EX–IM DEMO TODAY</span>
+
+              <span class="pointer-events-none absolute top-0 -left-[60%] w-[50%] h-full bg-white/35
+                         transition-all duration-[1000ms]
+                         [clip-path:polygon(0%_0%,55%_0%,100%_100%,25%_100%)]
+                         group-hover:left-[130%] group-hover:opacity-0"></span>
+
+              <span class="pointer-events-none absolute inset-0 bg-white/10
+                         opacity-0 group-hover:opacity-100 transition-opacity duration-500"></span>
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Popup Overlay -->
+  <div id="popup" class="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-50 p-4 hidden">
+
+    <div class="relative bg-white w-full max-w-[95%] sm:max-w-3xl rounded-2xl shadow-xl
+           pt-10 pb-10 px-6 sm:px-10 flex flex-col justify-center max-h-[90vh] overflow-y-auto">
+
+      <!-- Close Button -->
+      <button onclick="closePopup()" class="absolute top-3 right-5 text-gray-600 text-3xl hover:text-red-600">
+        &times;
+      </button>
+
+      <!-- Logo -->
+      <div class="flex items-center justify-center mt-10 md:mt-0 mb-4">
+        <img src="images/footer-logo.svg" alt="boatcraft" class="w-16 sm:w-20" />
+      </div>
+
+      <!-- Heading -->
+      <div class="text-center mb-6">
+        <h2 class="text-lg sm:text-xl font-bold text-[#155DFC] uppercase leading-snug">
+          Ready to Dominate Global Trade with Verified Buyer Leads?
+        </h2>
+      </div>
+
+      <!-- Message from PHP -->
+      <p id="phpMessage" class="text-center text-green-600 text-sm mb-3"></p>
+
+      <!-- FORM -->
+      <form action="main.php" method="post"
+        onsubmit="return validateSubmit()" class="space-y-4">
+
+        <!-- Two Column -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+
+          <input type="text" name="name" placeholder="Name (required)*" required
+            class="w-full border border-gray-300 rounded px-3 py-2 focus:ring-2 focus:ring-[#155DFC]" />
+
+          <input type="text" name="company" placeholder="Company"
+            class="w-full border border-gray-300 rounded px-3 py-2 focus:ring-2 focus:ring-[#155DFC]" />
+
+          <input type="email" name="email" required placeholder="Email (to send your demo access link)*"
+            class="w-full border border-gray-300 rounded px-3 py-2 focus:ring-2 focus:ring-[#155DFC]" />
+
+          <!-- PHONE FIELD -->
+          <div class="flex gap-2 items-center">
+
+            <!-- COUNTRY SELECT -->
+            <div class="flex items-center border border-gray-300 rounded-lg bg-white px-2 w-40 h-[46px] relative">
+              <img id="flagImg" src="https://flagcdn.com/w20/in.png" class="w-5 h-3 mr-2" />
+
+              <select id="countryCode" name="country_code" onchange="updateFlag()"
+                class="bg-transparent text-sm w-full h-full pr-5 focus:outline-none cursor-pointer"
+                style="appearance:none;">
+                <option value="+91" data-flag="https://flagcdn.com/w20/in.png">IN (+91)</option>
+                <option value="+93" data-flag="https://flagcdn.com/w20/af.png">AF (+93)</option>
+                <option value="+355" data-flag="https://flagcdn.com/w20/al.png">AL (+355)</option>
+                <option value="+213" data-flag="https://flagcdn.com/w20/dz.png">DZ (+213)</option>
+                <option value="+376" data-flag="https://flagcdn.com/w20/ad.png">AD (+376)</option>
+                <option value="+244" data-flag="https://flagcdn.com/w20/ao.png">AO (+244)</option>
+                <option value="+54" data-flag="https://flagcdn.com/w20/ar.png">AR (+54)</option>
+                <option value="+374" data-flag="https://flagcdn.com/w20/am.png">AM (+374)</option>
+                <option value="+61" data-flag="https://flagcdn.com/w20/au.png">AU (+61)</option>
+                <option value="+43" data-flag="https://flagcdn.com/w20/at.png">AT (+43)</option>
+                <option value="+994" data-flag="https://flagcdn.com/w20/az.png">AZ (+994)</option>
+                <option value="+1-242" data-flag="https://flagcdn.com/w20/bs.png">BS (+1-242)</option>
+                <option value="+973" data-flag="https://flagcdn.com/w20/bh.png">BH (+973)</option>
+                <option value="+880" data-flag="https://flagcdn.com/w20/bd.png">BD (+880)</option>
+                <option value="+1-246" data-flag="https://flagcdn.com/w20/bb.png">BB (+1-246)</option>
+                <option value="+375" data-flag="https://flagcdn.com/w20/by.png">BY (+375)</option>
+                <option value="+32" data-flag="https://flagcdn.com/w20/be.png">BE (+32)</option>
+                <option value="+501" data-flag="https://flagcdn.com/w20/bz.png">BZ (+501)</option>
+                <option value="+229" data-flag="https://flagcdn.com/w20/bj.png">BJ (+229)</option>
+                <option value="+975" data-flag="https://flagcdn.com/w20/bt.png">BT (+975)</option>
+                <option value="+591" data-flag="https://flagcdn.com/w20/bo.png">BO (+591)</option>
+                <option value="+387" data-flag="https://flagcdn.com/w20/ba.png">BA (+387)</option>
+                <option value="+267" data-flag="https://flagcdn.com/w20/bw.png">BW (+267)</option>
+                <option value="+55" data-flag="https://flagcdn.com/w20/br.png">BR (+55)</option>
+                <option value="+673" data-flag="https://flagcdn.com/w20/bn.png">BN (+673)</option>
+                <option value="+359" data-flag="https://flagcdn.com/w20/bg.png">BG (+359)</option>
+                <option value="+226" data-flag="https://flagcdn.com/w20/bf.png">BF (+226)</option>
+                <option value="+855" data-flag="https://flagcdn.com/w20/kh.png">KH (+855)</option>
+                <option value="+237" data-flag="https://flagcdn.com/w20/cm.png">CM (+237)</option>
+                <option value="+1" data-flag="https://flagcdn.com/w20/ca.png">CA (+1)</option>
+                <option value="+56" data-flag="https://flagcdn.com/w20/cl.png">CL (+56)</option>
+                <option value="+86" data-flag="https://flagcdn.com/w20/cn.png">CN (+86)</option>
+                <option value="+57" data-flag="https://flagcdn.com/w20/co.png">CO (+57)</option>
+                <option value="+506" data-flag="https://flagcdn.com/w20/cr.png">CR (+506)</option>
+                <option value="+385" data-flag="https://flagcdn.com/w20/hr.png">HR (+385)</option>
+                <option value="+53" data-flag="https://flagcdn.com/w20/cu.png">CU (+53)</option>
+                <option value="+357" data-flag="https://flagcdn.com/w20/cy.png">CY (+357)</option>
+                <option value="+420" data-flag="https://flagcdn.com/w20/cz.png">CZ (+420)</option>
+                <option value="+45" data-flag="https://flagcdn.com/w20/dk.png">DK (+45)</option>
+                <option value="+1-809" data-flag="https://flagcdn.com/w20/do.png">DO (+1-809)</option>
+                <option value="+593" data-flag="https://flagcdn.com/w20/ec.png">EC (+593)</option>
+                <option value="+20" data-flag="https://flagcdn.com/w20/eg.png">EG (+20)</option>
+                <option value="+503" data-flag="https://flagcdn.com/w20/sv.png">SV (+503)</option>
+                <option value="+372" data-flag="https://flagcdn.com/w20/ee.png">EE (+372)</option>
+                <option value="+251" data-flag="https://flagcdn.com/w20/et.png">ET (+251)</option>
+                <option value="+358" data-flag="https://flagcdn.com/w20/fi.png">FI (+358)</option>
+                <option value="+33" data-flag="https://flagcdn.com/w20/fr.png">FR (+33)</option>
+                <option value="+49" data-flag="https://flagcdn.com/w20/de.png">DE (+49)</option>
+                <option value="+233" data-flag="https://flagcdn.com/w20/gh.png">GH (+233)</option>
+                <option value="+30" data-flag="https://flagcdn.com/w20/gr.png">GR (+30)</option>
+                <option value="+852" data-flag="https://flagcdn.com/w20/hk.png">HK (+852)</option>
+                <option value="+36" data-flag="https://flagcdn.com/w20/hu.png">HU (+36)</option>
+                <option value="+354" data-flag="https://flagcdn.com/w20/is.png">IS (+354)</option>
+                <option value="+91" data-flag="https://flagcdn.com/w20/in.png">IN (+91)</option>
+                <option value="+62" data-flag="https://flagcdn.com/w20/id.png">ID (+62)</option>
+                <option value="+98" data-flag="https://flagcdn.com/w20/ir.png">IR (+98)</option>
+                <option value="+964" data-flag="https://flagcdn.com/w20/iq.png">IQ (+964)</option>
+                <option value="+353" data-flag="https://flagcdn.com/w20/ie.png">IE (+353)</option>
+                <option value="+972" data-flag="https://flagcdn.com/w20/il.png">IL (+972)</option>
+                <option value="+39" data-flag="https://flagcdn.com/w20/it.png">IT (+39)</option>
+                <option value="+81" data-flag="https://flagcdn.com/w20/jp.png">JP (+81)</option>
+                <option value="+962" data-flag="https://flagcdn.com/w20/jo.png">JO (+962)</option>
+                <option value="+254" data-flag="https://flagcdn.com/w20/ke.png">KE (+254)</option>
+                <option value="+965" data-flag="https://flagcdn.com/w20/kw.png">KW (+965)</option>
+                <option value="+961" data-flag="https://flagcdn.com/w20/lb.png">LB (+961)</option>
+                <option value="+352" data-flag="https://flagcdn.com/w20/lu.png">LU (+352)</option>
+                <option value="+60" data-flag="https://flagcdn.com/w20/my.png">MY (+60)</option>
+                <option value="+960" data-flag="https://flagcdn.com/w20/mv.png">MV (+960)</option>
+                <option value="+52" data-flag="https://flagcdn.com/w20/mx.png">MX (+52)</option>
+                <option value="+212" data-flag="https://flagcdn.com/w20/ma.png">MA (+212)</option>
+                <option value="+977" data-flag="https://flagcdn.com/w20/np.png">NP (+977)</option>
+                <option value="+31" data-flag="https://flagcdn.com/w20/nl.png">NL (+31)</option>
+                <option value="+64" data-flag="https://flagcdn.com/w20/nz.png">NZ (+64)</option>
+                <option value="+234" data-flag="https://flagcdn.com/w20/ng.png">NG (+234)</option>
+                <option value="+47" data-flag="https://flagcdn.com/w20/no.png">NO (+47)</option>
+                <option value="+968" data-flag="https://flagcdn.com/w20/om.png">OM (+968)</option>
+                <option value="+92" data-flag="https://flagcdn.com/w20/pk.png">PK (+92)</option>
+                <option value="+63" data-flag="https://flagcdn.com/w20/ph.png">PH (+63)</option>
+                <option value="+48" data-flag="https://flagcdn.com/w20/pl.png">PL (+48)</option>
+                <option value="+351" data-flag="https://flagcdn.com/w20/pt.png">PT (+351)</option>
+                <option value="+974" data-flag="https://flagcdn.com/w20/qa.png">QA (+974)</option>
+                <option value="+40" data-flag="https://flagcdn.com/w20/ro.png">RO (+40)</option>
+                <option value="+7" data-flag="https://flagcdn.com/w20/ru.png">RU (+7)</option>
+                <option value="+966" data-flag="https://flagcdn.com/w20/sa.png">SA (+966)</option>
+                <option value="+65" data-flag="https://flagcdn.com/w20/sg.png">SG (+65)</option>
+                <option value="+27" data-flag="https://flagcdn.com/w20/za.png">ZA (+27)</option>
+                <option value="+82" data-flag="https://flagcdn.com/w20/kr.png">KR (+82)</option>
+                <option value="+34" data-flag="https://flagcdn.com/w20/es.png">ES (+34)</option>
+                <option value="+94" data-flag="https://flagcdn.com/w20/lk.png">LK (+94)</option>
+                <option value="+46" data-flag="https://flagcdn.com/w20/se.png">SE (+46)</option>
+                <option value="+41" data-flag="https://flagcdn.com/w20/ch.png">CH (+41)</option>
+                <option value="+886" data-flag="https://flagcdn.com/w20/tw.png">TW (+886)</option>
+                <option value="+66" data-flag="https://flagcdn.com/w20/th.png">TH (+66)</option>
+                <option value="+90" data-flag="https://flagcdn.com/w20/tr.png">TR (+90)</option>
+                <option value="+971" data-flag="https://flagcdn.com/w20/ae.png">AE (+971)</option>
+                <option value="+44" data-flag="https://flagcdn.com/w20/gb.png">UK (+44)</option>
+                <option value="+380" data-flag="https://flagcdn.com/w20/ua.png">UA (+380)</option>
+                <option value="+1" data-flag="https://flagcdn.com/w20/us.png">US (+1)</option>
+                <option value="+84" data-flag="https://flagcdn.com/w20/vn.png">VN (+84)</option>
+                <option value="+263" data-flag="https://flagcdn.com/w20/zw.png">ZW (+263)</option>
+
+              </select>
+
+              <span class="absolute right-2 top-1/2 -translate-y-1/2 text-gray-500 pointer-events-none">▼</span>
+            </div>
+
+            <!-- PHONE INPUT -->
+            <input id="phoneInput" type="tel" name="mobile" placeholder="Phone Number*" required
+              class="flex-1 border rounded-lg px-3 h-[46px] focus:ring-2 border-gray-300 focus:ring-[#155DFC]" />
+          </div>
+
+        </div>
+
+        <!-- ERROR MESSAGE -->
+        <p id="phoneError" class="text-red-600 text-sm text-center"></p>
+
+        <!-- OTHER FIELDS -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <input type="text" name="markets" placeholder="Which global markets do you want to crack?"
+            class="border border-gray-300 rounded px-3 py-2 focus:ring-2 focus:ring-[#155DFC] col-span-1 sm:col-span-2" />
+
+          <select name="demo_slot"
+            class="border border-gray-300 rounded px-3 py-2 focus:ring-2 text-gray-700 focus:ring-[#155DFC] col-span-1 sm:col-span-2">
+            <option value="">Preferred demo slot</option>
+            <option value="week1">1st Week of the Month</option>
+            <option value="week2">2nd Week of the Month</option>
+            <option value="week3">3rd Week of the Month</option>
+            <option value="week4">Last Week of the Month</option>
+          </select>
+        </div>
+
+        <textarea name="challenges" rows="2" placeholder="What trading challenges frustrate you most?"
+          class="w-full border border-gray-300 rounded px-3 py-2 focus:ring-2 focus:ring-[#155DFC]"></textarea>
+
+        <textarea name="walkthrough" rows="2"
+          placeholder="Anything special you want covered during your 1:1 walkthrough?"
+          class="w-full border border-gray-300 rounded px-3 py-2 focus:ring-2 focus:ring-[#155DFC]"></textarea>
+
+        <!-- SUBMIT -->
+        <button class="uppercase w-fit text-sm md:text-base mt-4 py-3 px-6 mx-auto block
+               bg-[#155DFC] text-white font-semibold rounded-lg hover:opacity-90 transition">
+          GRAB MY FREE 1:1 DEMO - SHOW ME REAL BUYERS NOW
+        </button>
+
+      </form>
+    </div>
+  </div>
+
+  <!-- ✅ Countdown Timer Script -->
+  <script>
+    // TIMER (unchanged)
+    let timeLeft = 5 * 60;
+    function updateTimer() {
+      const minutes = String(Math.floor(timeLeft / 60)).padStart(2, "0");
+      const seconds = String(timeLeft % 60).padStart(2, "0");
+      document.getElementById("timer-display").textContent = `${minutes} : ${seconds}`;
+      if (timeLeft > 0) timeLeft--;
+    }
+    updateTimer();
+    setInterval(updateTimer, 1000);
+
+
+    // SCROLL FOOTER LOGIC
+    const footer = document.getElementById("sticky-footer");
+    const secondSection = document.querySelectorAll("section")[1]; // second <section>
+
+    let lastScrollY = window.scrollY;
+
+    window.addEventListener("scroll", () => {
+      const currentScrollY = window.scrollY;
+
+      // Check if user has passed the second section
+      const secondSectionOffset = secondSection.offsetTop + secondSection.offsetHeight;
+
+      if (currentScrollY < secondSectionOffset) {
+        // Before section 2 → hide footer always
+        footer.classList.add("opacity-0", "pointer-events-none", "hidden");
+        return;
+      }
+
+      // Scroll Direction
+      if (currentScrollY > lastScrollY) {
+        // Scrolling down → SHOW footer
+        footer.classList.remove("opacity-0", "pointer-events-none", "hidden");
+      } else {
+        // Scrolling up → HIDE footer
+        footer.classList.add("opacity-0", "pointer-events-none", "hidden");
+      }
+
+      lastScrollY = currentScrollY;
+    });
+  </script>
+
+
+  <!-- Accordion Logic -->
+  <script>
+    let openIndex = 0;
+
+    function toggleFaq(i) {
+      const answer = document.getElementById(`faq-${i}`);
+      const arrow = document.getElementById(`arrow-${i}`);
+
+      // Close previously opened FAQ
+      if (openIndex !== null && openIndex !== i) {
+        document.getElementById(`faq-${openIndex}`).classList.add("hidden");
+        document.getElementById(`arrow-${openIndex}`).classList.remove("rotate-180");
+      }
+
+      // Toggle current
+      if (answer.classList.contains("hidden")) {
+        answer.classList.remove("hidden");
+        arrow.classList.add("rotate-180");
+        openIndex = i;
+      } else {
+        answer.classList.add("hidden");
+        arrow.classList.remove("rotate-180");
+        openIndex = null;
+      }
+    }
+  </script>
+
+
+  <script>
+   
+
+    // Create progress bar boxes inside every .progressBar container
+    function createProgressBars() {
+      document.querySelectorAll(".progressBar").forEach((container) => {
+        container.innerHTML = ""; // Clear existing content
+
+        for (let i = 0; i < totalBoxes; i++) {
+          const div = document.createElement("div");
+          div.className =
+            "h-4 w-2 sm:h-6 sm:w-3 rounded-sm bg-gray-600 transition-colors duration-300";
+          container.appendChild(div);
+        }
+      });
+    }
+
+    // Update progress animation
+    function updateProgress() {
+      document.querySelectorAll(".progressBar").forEach((container) => {
+        const boxes = container.children;
+
+        for (let i = 0; i < totalBoxes; i++) {
+          if (i < activeBox) {
+            boxes[i].classList.remove("bg-gray-600");
+            boxes[i].classList.add("bg-[#1E79FF]");
+          } else {
+            boxes[i].classList.remove("bg-[#1E79FF]");
+            boxes[i].classList.add("bg-gray-600");
+          }
+        }
+      });
+
+      activeBox = activeBox >= totalBoxes ? 1 : activeBox + 1;
+    }
+
+    // Initialize progress bars everywhere
+    createProgressBars();
+    updateProgress();
+    setInterval(updateProgress, 150);
+  </script>
+
+
+
+
+  <script>
+    let index = 0;
+    const cards = document.querySelectorAll(".testimonial-card");
+    const total = cards.length;
+
+    function updateSlides() {
+      cards.forEach((card, i) => {
+        if (i === index) {
+          card.classList.add("opacity-100", "translate-y-0", "scale-100");
+          card.classList.remove("opacity-50", "translate-y-3", "scale-95");
+        } else {
+          card.classList.add("opacity-50", "translate-y-3", "scale-95");
+          card.classList.remove("opacity-100", "translate-y-0", "scale-100");
+        }
+      });
+    }
+
+    document.getElementById("nextBtn").addEventListener("click", () => {
+      index = (index + 1) % total;
+      updateSlides();
+    });
+
+    document.getElementById("prevBtn").addEventListener("click", () => {
+      index = (index - 1 + total) % total;
+      updateSlides();
+    });
+
+    // Auto slide every 4 seconds
+    setInterval(() => {
+      index = (index + 1) % total;
+      updateSlides();
+    }, 4000);
+
+    updateSlides();
+  </script>
+  <!--  -->
+  <script>
+    /* Open Popup */
+    function openPopup() {
+      document.getElementById("popup").classList.remove("hidden");
+    }
+
+    /* Close Popup */
+    function closePopup() {
+      document.getElementById("popup").classList.add("hidden");
+    }
+
+    /* Load message from PHP */
+    fetch("https://getnos.io/dollar-bussiness/dollarmail/main.php")
+      .then(res => res.json())
+      .then(data => {
+        document.getElementById("phpMessage").innerText = data.message || "";
+      });
+
+    /* Update flag when changing country */
+    function updateFlag() {
+      const select = document.getElementById("countryCode");
+      const flag = select.options[select.selectedIndex].getAttribute("data-flag");
+      document.getElementById("flagImg").src = flag;
+    }
+
+    /* Phone validation */
+    function validateSubmit() {
+      const country = document.getElementById("countryCode").value;
+      const phone = document.getElementById("phoneInput").value.trim();
+      const errorBox = document.getElementById("phoneError");
+
+      errorBox.innerText = "";
+
+      // INDIA VALIDATION (EXACT 10 DIGITS)
+      if (country === "+91") {
+        if (!/^[0-9]{10}$/.test(phone)) {
+          errorBox.innerText = "For +91, phone number must be exactly 10 digits.";
+          return false;
+        }
+      }
+
+      // INTERNATIONAL VALIDATION (7–11 DIGITS ONLY)
+      else {
+        if (!/^[0-9]{7,11}$/.test(phone)) {
+          errorBox.innerText = "For international numbers, enter 7 to 11 digits only.";
+          return false;
+        }
+      }
+
+      return true;
+    }
+
+  </script>
+
+  <script>
+    const totalBoxes = 24;
+    let activeBox = 8;
+    // Create progress bar boxes inside every .progressBar container
+    function createProgressBars() {
+      document.querySelectorAll(".progressBar").forEach((container) => {
+        container.innerHTML = ""; // Clear existing content
+        for (let i = 0; i < totalBoxes; i++) {
+          const div = document.createElement("div");
+          div.className =
+            "h-2 w-1.5 sm:h-6 sm:w-3 rounded-sm bg-gray-600 transition-colors duration-300";
+          container.appendChild(div);
+        }
+      });
+    }
+    // Update progress animation
+    function updateProgress() {
+      document.querySelectorAll(".progressBar").forEach((container) => {
+        const boxes = container.children;
+        for (let i = 0; i < totalBoxes; i++) {
+          if (i < activeBox) {
+            boxes[i].classList.remove("bg-gray-600");
+            boxes[i].classList.add("bg-[#1E79FF]");
+          } else {
+            boxes[i].classList.remove("bg-[#1E79FF]");
+            boxes[i].classList.add("bg-gray-600");
+          }
+        }
+      });
+      activeBox = activeBox >= totalBoxes ? 1 : activeBox + 1;
+    }
+    // Initialize progress bars everywhere
+    createProgressBars();
+    updateProgress();
+    setInterval(updateProgress, 150);
+
+
+    // Progress boxes generator + animation
+    (function () {
+      function initProgressBoxes() {
+        var container = document.getElementById('progressBoxes');
+        if (!container) return;
+
+        var total = 24;
+        var active = 8;
+
+        // Clear if anything exists
+        container.innerHTML = '';
+
+        // create boxes
+        for (var i = 0; i < total; i++) {
+          var box = document.createElement('div');
+          box.className = 'pb-box';
+          container.appendChild(box);
+        }
+
+        function update() {
+          var boxes = container.children;
+          for (var j = 0; j < boxes.length; j++) {
+            if (j < active) boxes[j].classList.add('active');
+            else boxes[j].classList.remove('active');
+          }
+        }
+
+        update();
+
+        setInterval(function () {
+          active = (active >= total) ? 1 : active + 1;
+          update();
+        }, 150);
+      }
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initProgressBoxes);
+      } else {
+        initProgressBoxes();
+      }
+    })();
+
+
+
+  </script>
+</body>
+
+</html>

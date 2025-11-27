@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'Kanit-bold';
+    src: url('images/fonts/Kanit-Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Kanit-light';
+    src: url('images/fonts/Kanit-Light.ttf') format('truetype');
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Kanit-bold'!important;
+}
+p, a, li,.hey,.point{
+    font-family: 'Kanit-light' !important;
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-scroll {
+  animation: scroll 18s linear infinite;
+}
