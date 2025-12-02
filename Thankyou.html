@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thankyou-page</title>
+  <style>
+    :root {
+      --bg: #ffffff; /* white background */
+      --ink: #0f172a; /* dark text */
+      --muted: #4b5563;
+      --card: #ffffff;
+      --ring: #e5e7eb;
+      --shadow: 0 20px 45px rgba(0,0,0,.08);
+      --yellow: #F7C948; /* yellow hero wedge */
+      --blue: #3B82F6; /* blue wedge */
+    }
+
+    * { box-sizing:border-box; margin:0; padding:0; }
+
+    body {
+      font-family: system-ui, Arial;
+      background: var(--bg);
+      color: var(--ink);
+    }
+
+    .hero {
+      position: relative;
+      padding: clamp(48px, 8vw, 90px) 20px;
+      overflow: hidden;
+      min-height: 100svh;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+    }
+
+    .hero::before,
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: auto;
+      width: 52vw;
+      height: 52vw;
+      max-width: 720px;
+      max-height: 720px;
+      transform: skewY(-12deg) rotate(-12deg);
+      filter: drop-shadow(0 12px 18px rgba(0,0,0,.06));
+      opacity: .95;
+      z-index: 0;
+    }
+
+    .hero::before {
+      left: -5vw;
+      top: -22vw;
+      background: var(--yellow);
+      clip-path: polygon(0 0, 100% 0, 0 100%);
+    }
+
+    .hero::after {
+      right: -5vw;
+      bottom: -22vw;
+      background: var(--blue);
+      clip-path: polygon(100% 0, 100% 100%, 0 100%);
+    }
+
+    .wrap { width:min(1100px,100%); position:relative; z-index:1; }
+
+    .center { text-align:center; max-width:760px; margin:0 auto; padding-inline:12px; }
+
+    .check {
+      width: 60px;
+      height: 60px;
+      margin: 0 auto 16px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: #fff3b0;
+      color: #eab308;
+      font-size: 32px;
+      line-height: 1;
+    }
+
+    h1 {
+      font-weight: 800;
+      font-size: clamp(28px, 4vw, 44px);
+      color: var(--ink);
+    }
+
+    .lead {
+      margin-top: 12px;
+      color: var(--muted);
+      line-height: 1.7;
+      font-size: clamp(18px, 1.6vw, 20px);
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--ring);
+      border-radius: 14px;
+      padding: clamp(18px, 2.8vw, 30px);
+      box-shadow: var(--shadow);
+      margin: clamp(26px, 4vw, 40px) auto 0;
+      max-width: 700px;
+    }
+
+    .card p {
+      color: #111827;
+      line-height: 1.7;
+      font-size: clamp(16px, 1.5vw, 20px);
+      text-align: center;
+    }
+  </style>
+  <script>
+  fbq('track', 'Lead');
+</script>
+</head>
+
+<body>
+  <section class="hero">
+    <div class="wrap">
+      <div class="center">
+        <div class="check">😊</div>
+
+        <h1>Thank You - You're All Set!</h1>
+        <p class="lead">Your request for a <strong>personalized demo of The Dollar Business EX-IM Platform</strong> is confirmed.</p>
+        <p class="lead">You're now one step closer to commanding global trade using <strong>human-verified export-import intelligence trusted by 51,000+ businesses worldwide.</strong></p>
+      </div>
+
+      <div class="card">
+        <p>
+          Expect to receive your demo slot details shortly. Get ready to explore real international buyers, predictive shipment insights, and Nexus mapping - all designed to accelerate your export-import growth effortlessly.
+          <br><br>
+          If you have any questions or need support, our team is here to help.  
+          <br><br><strong>Welcome to the future of data-driven global trading success! </strong>
+        </p>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
